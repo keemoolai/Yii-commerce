@@ -43,5 +43,22 @@ CREATE TABLE yc_product
 
 
 
+#--
+#-- Test Data
+#--
+
+INSERT INTO yc_category (id, name)
+VALUES
+	(1, "Electronics"),
+	(2, "Clothes"),
+	(3, "Sporting Goods");
+	
+INSERT INTO yc_product (id, name, price, description, category_id)
+VALUES
+	(1, "Laptop", 1200.00, "A stunning little laptop.", 1),
+	(2, "Smartphone", 299.99, "The most powerful smartphone yet.", 1),
+	(3, "White Shirt", 12.50, "Comfortable, cotton, and plain.", 2),
+	(4, "Football Helmet", 68.75, "Authentic NFL helmet.", 3);
+
 
 COMMIT;
